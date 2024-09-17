@@ -74,12 +74,12 @@ function Service() {
         <motion.div variants={conatainerVariant} 
             initial='hidden'
             whileInView={'visible'} 
-            viewport={{amount: 0.8}}
+            viewport={{amount: 0.5}}
             className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8'>
             {serviceData.map((service) => (
                 <motion.div variants={cardVariants} key={service.id} className='text-center p-4 space-y-6'>
                     <img src={service.image} alt='coffee-img' className='img-shadow2 max-w-[200px] mx-auto 
-                        hover:scale-110 duration-300 cursor-pointer' />
+                        hover:scale-105 duration-300 cursor-pointer' />
                     <div className='space-y-1'>
                         <h1 className='text-2xl font-bold text-primary'>
                             {service.title}
