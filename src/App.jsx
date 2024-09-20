@@ -1,8 +1,10 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react'
 import Hero from './components/Hero'
 import Service from './components/Service'
 import WhereToBuy from './components/WhereToBuy'
 import AppBanner from './components/AppBanner'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
       <Service />
       <WhereToBuy/>
       <AppBanner/>
+      <Footer />
     </div>
   )
 }

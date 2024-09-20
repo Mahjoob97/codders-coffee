@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react'
 import bannerImg from '../assets/coffee-cover.jpg'
 import appStore from '../assets/app_store.png'

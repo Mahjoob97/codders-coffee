@@ -25,11 +25,11 @@ function Hero() {
                     {/* text content section */}
                     <div className='text-lightOrange mt-[100px] md:mt-0 p-4 space-y-28'>
                         <motion.h1 initial={{opacity: 0, y: -100 }} 
-                        animate={{opacity: 1, y: 0}} 
+                        whileInView={{opacity: 1, y: 0}} 
                         transition={{type: 'spring', stiffness: 100, damping: 10, delay: 1}}
                         className='text-7xl font-bold leading-tight ml-14'>Blvck Tumbler</motion.h1>
                         <motion.div initial={{opacity: 0, y: -100 }} 
-                        animate={{opacity: 1, y: 0}} 
+                        whileInView={{opacity: 1, y: 0}} 
                         transition={{type: 'spring', stiffness: 100, damping: 10, delay: 1.2}} className='relative'>
                             <div className='relative space-y-4 z-10'>
                                 <h1 className='text-2xl'>
@@ -49,19 +49,19 @@ function Hero() {
                     {/* hero image section */}
                     <div className='relative'>
                         <motion.img initial={{opacity: 0, scale: 0 }} 
-                            animate={{opacity: 1, scale: 1}} 
+                            whileInView={{opacity: 1, scale: 1}} 
                             transition={{type: 'spring', stiffness: 100, damping: 10, delay: 0.4}} 
                             src={TheMug} alt="blackMug" className='relative z-40 h-[400px] md:h-[700px] img-shadow' />
                         {/* Orange circle */}
                         <motion.div initial={{opacity: 0, y: 100 }} 
-                            animate={{opacity: 1, y: 0}} 
+                            whileInView={{opacity: 1, y: 0}} 
                             transition={{type: 'spring', stiffness: 100, damping: 10, delay: 0.8}} 
                             className='absolute top-24 -right-16 border-primary rounded-full h-[180px] w-[180px] z-10 border-[20px] '>
                         </motion.div>
 
                         {/* big text section */}
                         <motion.div initial={{opacity: 0, x: -100 }} 
-                            animate={{opacity: 1, x: 0}} 
+                            whileInView={{opacity: 1, x: 0}} 
                             transition={{type: 'spring', stiffness: 100, damping: 10, delay: 0.8}} 
                             className='absolute -top-20 left-[200px] z-[1]'>
                             <h1 className="text-[140px] sclae-150 font-bold text-darkGray/40 leading-none">
@@ -72,7 +72,7 @@ function Hero() {
 
                     {/* third div section */}
                     <motion.div initial={{opacity: 0, y: -100 }} 
-                        animate={{opacity: 1, y: 0}} 
+                        whileInView={{opacity: 1, y: 0}} 
                         transition={{type: 'spring', stiffness: 100, damping: 10, delay: 1.2}} 
                         className='text-lightOrange mt-[100px] md:mt-0 p-4 space-y-28'>
                         <h1 className=' opacity-0 text-7xl font-bold leading-tight ml-14'>Blvck Tumbler</h1>
